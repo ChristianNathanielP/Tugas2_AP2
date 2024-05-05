@@ -6,8 +6,8 @@ using namespace std;
 int angkaGagal = 0; //Variabel untuk menyimpan angka terakhir yang gagal memenuhi Algoritma FizzBuzz
 
 //Fungsi Prototype
-int DeretSegitiga (int n);
-int FizzBuzz (int deret);
+void DeretSegitiga (int n);
+void FizzBuzz (int deret);
 
 //Program Utama
 int main() {
@@ -40,7 +40,7 @@ int main() {
     return (0);
 }
 
-int DeretSegitiga (int n) {
+void DeretSegitiga (int n) {
     //Deklarasi variable lokal
     int i,deret;
     //Perulangan untuk deret segitiga
@@ -59,7 +59,7 @@ int DeretSegitiga (int n) {
     cout << "Tipe data " << angkaGagal << " adalah " << typeid(angkaGagal).name() << endl;
 }
 
-int FizzBuzz (int deret) {
+void FizzBuzz (int deret) {
     //Seleksi deret berdasarkan Aturan Algoritma FizzBuzz
     if ((deret%3 == 0) && (deret%5 == 0)) { //Termasuk kelipatan 3 dan 5
         cout << "FizzBuzz";
